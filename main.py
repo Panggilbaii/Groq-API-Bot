@@ -14,7 +14,7 @@ client = Groq(
     api_key=os.environ.get('GROQ_API_KEY'),
 )
 
-client = instructor.from_groq(client, mode=instructor.Mode.TOOLS)
+client = instructor.from_groq(client, mode=instructor.Mode.JSON)
 
 resp = client.chat.completions.create(
     model="mixtral-8x7b-32768",
