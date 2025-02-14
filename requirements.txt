@@ -1,2 +1,4 @@
-requests
+groq
+pydantic
+instructor
 python-dotenv
